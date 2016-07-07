@@ -13,6 +13,8 @@
  */
 // write your code here
 
+let list = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
+
 
 
 
@@ -23,7 +25,7 @@
  */
 // write your code here
 
-
+var shoppingList: [String] = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 
@@ -32,6 +34,8 @@
  */
 // write your code here
 
+var futureShoppingList: [String]
+futureShoppingList = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 
@@ -43,7 +47,7 @@
 // write your code here
 
 
-
+let cheeseSandwich: [String] = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 
@@ -53,6 +57,7 @@
 // write your code here
 
 
+let desertList: [String] = ["Cookie dough", "Icecream"]
 
 
 
@@ -62,6 +67,9 @@
  ### 6. Write an array called 'afternoonAttendance' **with** a type specified that contains the integer values 2, 10, 3, 15, 7.
  */
 // write your code here
+
+let afternoonAttendance: [Int] = [2, 10, 3, 15, 7]
+
 
 
 
@@ -75,6 +83,7 @@
  */
 // write your code here
 
+shoppingList.insert("itemToPrint", atIndex: 1)
 
 
 
@@ -86,6 +95,9 @@
  ### 8. Change the value of 'Cheese' in the 'futureShoppingList' array to 'Chicken' and then print the array to the screen.
  */
 // write your code here
+
+futureShoppingList[2] = "Chicken"
+print(futureShoppingList)
 
 
 
@@ -99,7 +111,18 @@
  */
 // write your code here
 
-
+func lifesEssential(ingredients: [String])->Bool
+{
+    if(ingredients.contains("Bread"))
+    {
+        return true
+    }
+    else
+    {
+        return false
+    }
+    
+}
 
 
 
@@ -111,7 +134,7 @@
 
 
 
-
+lifesEssential(shoppingList)
 
 
 
@@ -121,7 +144,7 @@
  */
 // write your code here
 
-
+lifesEssential(desertList)
 
 
 
